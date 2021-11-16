@@ -1,4 +1,4 @@
-Start building a model of your business in ERPNext by adding your Items and Customers.
+Start building a model of your business in BuzzERP by adding your Items and Customers.
 
 These videos 📺 will help you get started:
 

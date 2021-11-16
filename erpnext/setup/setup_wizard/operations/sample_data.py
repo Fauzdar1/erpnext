@@ -94,12 +94,12 @@ def make_projects(domains):
 	current_date = frappe.utils.nowdate()
 	project = frappe.get_doc({
 		"doctype": "Project",
-		"project_name": "ERPNext Implementation",
+		"project_name": "BuzzERP Implementation",
 	})
 
 	tasks = [
 		{
-			"title": "Explore ERPNext",
+			"title": "Explore BuzzERP",
 			"start_date": current_date,
 			"end_date": current_date,
 			"file": "explore.md"
@@ -108,7 +108,7 @@ def make_projects(domains):
 	if 'Education' in domains:
 		tasks += [
 			{
-				"title": _("Setup your Institute in ERPNext"),
+				"title": _("Setup your Institute in BuzzERP"),
 				"start_date": current_date,
 				"end_date": frappe.utils.add_days(current_date, 1),
 				"file": "education_masters.md"

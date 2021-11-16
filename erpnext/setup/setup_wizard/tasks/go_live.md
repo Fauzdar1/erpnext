@@ -1,4 +1,4 @@
-Ready to go live with ERPNext? 🏁🏁🏁
+Ready to go live with BuzzERP? 🏁🏁🏁
 
 Here are the steps:
 

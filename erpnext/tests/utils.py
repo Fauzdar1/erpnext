@@ -14,7 +14,7 @@ ReportName = NewType("ReportName", str)
 
 
 class ERPNextTestCase(unittest.TestCase):
-	"""A sane default test class for ERPNext tests."""
+	"""A sane default test class for BuzzERP tests."""
 
 
 	@classmethod

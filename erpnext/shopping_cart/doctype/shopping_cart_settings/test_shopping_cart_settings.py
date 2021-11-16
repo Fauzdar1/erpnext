@@ -21,7 +21,7 @@ class TestShoppingCartSettings(unittest.TestCase):
 		return frappe.get_doc({"doctype": "Shopping Cart Settings",
 			"company": "_Test Company"})
 
-	# NOTE: Exchangrate API has all enabled currencies that ERPNext supports.
+	# NOTE: Exchangrate API has all enabled currencies that BuzzERP supports.
 	# We aren't checking just currency exchange record anymore
 	# while validating price list currency exchange rate to that of company.
 	# The API is being used to fetch the rate which again almost always

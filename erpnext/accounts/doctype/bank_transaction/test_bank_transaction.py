@@ -39,7 +39,7 @@ class TestBankTransaction(unittest.TestCase):
 		# Delete POS Profile
 		frappe.db.sql("delete from `tabPOS Profile`")
 
-	# This test checks if ERPNext is able to provide a linked payment for a bank transaction based on the amount of the bank transaction.
+	# This test checks if BuzzERP is able to provide a linked payment for a bank transaction based on the amount of the bank transaction.
 	def test_linked_payments(self):
 		bank_transaction = frappe.get_doc("Bank Transaction", dict(description="Re 95282925234 FE/000002917 AT171513000281183046 Conrad Electronic"))
 		linked_payments = get_linked_payments(bank_transaction.name, ['payment_entry', 'exact_match'])
@@ -67,7 +67,7 @@ class TestBankTransaction(unittest.TestCase):
 		clearance_date = frappe.db.get_value("Payment Entry", payment.name, "clearance_date")
 		self.assertFalse(clearance_date)
 
-	# Check if ERPNext can correctly filter a linked payments based on the debit/credit amount
+	# Check if BuzzERP can correctly filter a linked payments based on the debit/credit amount
 	def test_debit_credit_output(self):
 		bank_transaction = frappe.get_doc("Bank Transaction", dict(description="Auszahlung Karte MC/000002916 AUTOMAT 698769 K002 27.10. 14:07"))
 		linked_payments = get_linked_payments(bank_transaction.name, ['payment_entry', 'exact_match'])

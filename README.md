@@ -32,7 +32,7 @@ BuzzERP as a monolith includes the following areas for managing businesses:
 
 BuzzERP requires MariaDB.
 
-BuzzERP is built on the [Frappe Framework](https://github.com/frappe/frappe), a full-stack web app framework built with Python & JavaScript.
+BuzzERP is built with Python & JavaScript.
 
 - [User Guide](https://erpnext.com/docs/user)
 - [Discussion Forum](https://discuss.erpnext.com/)
